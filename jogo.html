@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo em JS - Estourando Balões</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<script src="jogo.js"></script>
+
+	</head>
+
+	<body onload="iniciarJogo()"> <!-- assim que o jogo for carregado ele chama o jogo.js -->
+
+		<div style="float: left; width: auto; height: 498px; background: #FFF; border: solid 1px #A2A2A2; margin: 5px;">
+			<table border="0">
+				<tr>
+					<td>
+						<img src="images/balao_azul_grande.png">
+					</td>
+					<td>
+						<span id="baloes_inteiros" style="font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table><br>
+
+			<table border="0">
+				<tr>
+					<td>
+						<img src="images/balao_azul_grande_estourado.png">
+					</td>
+					<td>
+						<span id="baloes_estourados" style="font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table><br>
+
+			<table border="0" style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url(images/cronometro.png); text-align: center;">
+
+						<span id="cronometro" style="color: red; font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table><br>
+
+			<div class="text-center">
+				<a href="index.html" class="btn btn-success">Reiniciar Jogo</a>
+			</div>
+
+		</div>
+
+		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('images/cenario.jpg'); margin: 5px;">
+		</div>
+
+
+	</body>
+	
+</html>

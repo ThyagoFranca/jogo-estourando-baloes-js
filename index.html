@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Jogo em JS - Estourando Balões</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<script language='Javascript'>
+
+			function iniciarJogo(){
+			var nivel_jogo = document.getElementById('nivel_jogo').value; // para recuperar o id="nivel_jogo" no <select>
+
+			window.location.href = 'jogo.html?' + nivel_jogo; // quando escolher o nível e clicar no botão iniciar altera a pagina e o nível do jogo e inicia, esse método não é muito recomendado usar é apenas para esse jogo
+			}
+			
+		</script>
+
+		<style>
+
+			img {
+				width: 100%; 
+				height: 650px;
+				
+			}
+
+			.conteudo {
+				position: relative;
+				bottom: 350px;
+			}
+
+			.conteudo #nivel_jogo {
+				margin-bottom: 50px;
+			}
+
+			button {
+				width: 300px;
+			}
+
+		</style>
+
+	</head>
+
+	<body style="height: 600px;">
+
+
+		<div class="banner">
+			<img src="images/banner.jpg">
+		</div>
+
+		<div class="conteudo text-center">
+			<span>Instruções:</span>
+
+			<p>Estoure todos os balões antes do tempo acabar</p>
+			
+			<h2><strong>Escolha o Nível:</strong></h2>
+			<select id="nivel_jogo">
+				<option value="1">Fácil</option>
+				<option value="2">Normal</option>
+				<option value="3">Difícil</option>
+			</select>
+
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+			</div>
+		</div>
+
+	</body>
+	
+</html>
